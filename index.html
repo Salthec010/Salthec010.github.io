@@ -6,82 +6,102 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SALTECH</title>
     <style>
-        body {
-            background: url("saltech.jpg");
-            background-size: cover;
-            background-position: center;
-            margin: 0;
-            padding: 0;
-            font-family: 'Arial', sans-serif;
-        }
+               /* General Styles */
+body {
+    background: url("saltech.jpg");
+    background-size: cover;
+    background-position: center;
+    margin: 0;
+    padding: 0;
+    font-family: 'Arial', sans-serif;
+}
 
-        .nav-bar a {
-            color: black;
-            text-decoration: none;
-            font-size: 18px;
-            margin: 0 15px;
-        }
+/* Navigation Styles */
+.media-icons a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    margin: 0 10px;
+}
 
-        .home-container {
-            text-align: center;
-            padding: 20px;
-        }
+/* Home Section Styles */
+.home-container {
+    text-align: center;
+    padding: 20px;
+}
 
-        .media-icons a {
-            color: white;
-            text-decoration: none;
-            font-size: 24px;
-            margin: 0 10px;
-        }
+.home-img img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
 
-        .try {
-            text-align: center;
-            margin: 20px;
-        }
+.info {
+    margin-top: 20px;
+}
 
-        .try h3 {
-            font-size: 20px;
-            margin-bottom: 10px;
-        }
+/* Panel Section Styles */
+.porflater {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 
-        .btn-home {
-            padding: 10px;
-            background-color: white;
-            color: black;
-            text-decoration: none;
-            border-radius: 5px;
-            font-size: 16px;
-        }
+.try {
+    text-align: center;
+    margin: 20px;
+}
 
-        /* Responsive styles */
-        @media (max-width: 768px) {
-            .nav-items {
-                display: none;
-                flex-direction: column;
-                position: absolute;
-                top: 70px;
-                left: 0;
-                right: 0;
-                background-color: #333;
-                z-index: 1;
-            }
+.try h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
 
-            .nav-bar {
-                flex-direction: column;
-            }
+.btn-home {
+    padding: 10px;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
 
-            .nav-menu-btn {
-                display: block;
-            }
+/* Footer Styles */
+#footer {
+    text-align: center;
+    padding: 10px;
+}
 
-            .nav-items.active {
-                display: flex;
-            }
+/* Responsive Styles */
+@media (max-width: 768px) {
+    /* Home Section Styles */
+    .home-container {
+        padding: 10px;
+    }
 
-            .nav-bar a {
-                margin: 10px 0;
-            }
-        }
+    .home-img img {
+        max-width: 150px;
+    }
+
+    .info {
+        margin-top: 10px;
+    }
+
+    /* Panel Section Styles */
+    .try {
+        margin: 10px;
+    }
+
+    .try h3 {
+        font-size: 16px;
+        margin-bottom: 5px;
+    }
+
+    .btn-home {
+        font-size: 14px;
+        margin-top: 5px;
+    }
+}
     </style>
 </head>
 
@@ -99,21 +119,24 @@
     <section class="home flex-center" id="home">
         <div class="home-container">
             <div class="media-icons">
-                <a href="https://www.facebook.com/profile.php?id=61551251367817&mibextid=ZbWKwL" target="_blank"><i class="fa fa-facebook-square"></i></a>
+                <a href="https://www.facebook.com/profile.php?id=61551251367817&mibextid=ZbWKwL" target="_blank"><i
+                        class="fa fa-facebook-square"></i></a>
                 <a href="https://www.instagram.com/neri_boyyy/" target="_blank"><i class="fa fa-instagram"></i></a>
-                <a href="https://mail.google.com/mail/u/1/" target="_blank"><i class="fa fa-email"></i></a>
-                <a href="tel:+09858785331" target="_blank"><i class="fa fa-cellphone"></i></a>
+                <a href="https://mail.google.com/mail/u/1/" target="_blank"><i class="fa fa-envelope"></i></a>
+                <a href="tel:+09858785331" target="_blank"><i class="fa fa-phone"></i></a>
             </div>
             <div class="home-img">
+                <h2><img src="hahaha.png" alt="SALTECH">*SALTECH*</h2>
+                <p>A College Portfolio</p>
                 <img src="mapic.jpg" alt="me" width="200">
             </div>
             <div class="info">
                 <h2>It's me your tech, <span>NERS!</span></h2>
                 <h3>RTU Student / CEIT-37-301A</h3>
-                <p>Delightfully welcomed to entertain your respective vision by bringing in splendid ideas to the table.</p>
+                <p>Delightfully welcomed to entertain your respective vision by bringing in splendid ideas to the
+                    table.</p>
             </div>
         </div>
-
     </section>
 
     <section class="panel section" id="panel">
@@ -144,69 +167,6 @@
     </section>
 
     <footer id="footer">
-        <div class="footer-container">
-            <div class="about group">
-                <h2><img src="hahaha.png" alt="SALTHEC">*SALTHEC*</h2>
-                <p>A College Portfolio</p>
-            </div>
-            <div class="hr"></div>
-            <div class="info group">
-                <h3>ANOTHER CONTENT!</h3>
-                <ul>
-                    <li><a href="/HOME.html">HOME</a></li>
-                    <li><a href="/ABOUT.html">ABOUT</a></li>
-                    <li><a href="/ACTIVITIES.html">ACTIVITIES</a></li>
-                    <li><a href="/MY RESUME.html">MY RESUME</a></li>
-                    <li><a href="/CONTACT.html">CONTACT</a></li>
-                </ul>
-            </div>
-            <div class="hr"></div>
-            <div class="follow">
-                <h3>MY SOCIAL MEDIA!</h3>
-                <section class="contact section" id="contact">
-                  <div class="container flex-center">
-                    <div class="content">
-                      
-                      <div class="contact-info education-all">
-                        <div class="education">
-                          <h3>JUST CLICK HERE!</h3>
-                          <h4><label><i class="fa fa-phone"> CELLPHONE</i></label></h4>
-                          <ul class="con-list">
-                            <li class="item">
-                              <span class="year"><b>TNT</b></span><br>
-                              <span><a href="tel:+09858785331">+09858785331
-                                  <img src="image (3).png" width="90"></a></span>
-                            </li>
-                            <br>
-                            <h4><label><i class="fa fa-envelope"> EMAIL</i></label></h4>
-                            <li class="item">
-                              <span class="year"><b>GMAIL ADDRESS</b></span><br>
-                                <span><a href="https://mail.google.com/mail/u/1/">ramirneri3@gmail.com
-                                  <img src="image.png" width="90"></a></span>
-                            </li>
-                            <br>
-                            <h4><label><i class="fa fa-map-marker"> INSTAGRAM</i></label></h4>
-                            <li class="item">
-                              <span class="year"><b>nersss</b></span><br>
-                             <span><a href="https://www.instagram.com/neri_boyyy/" target="_blank">@neri_boyyy
-                                  <img src="image (2).png" width="90"></a>
-                             <br>
-                             <h4><label><i class="fa fa-map-marker"> FACEBOOK</i></label></h4>
-                            <li class="item">
-                              <span class="year"><b>ners</b></span><br>
-                                <span><a href="https://www.facebook.com/profile.php?id=61551251367817&mibextid=ZbWKwL" target="_blank">RAMIR NERI
-                                  <img src="image (1).png" width="90"></a>
-                              
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </section>
-            </div>
-        </div>
-        
         <div class="footer-copyright group">
             <p>©2023 by: NERS, at your service.</p>
         </div>
